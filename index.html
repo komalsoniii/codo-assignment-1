@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">                                                
+        <title>
+            Job Finder  
+        </title>
+    </head>
+    <body>
+       
+        <div class="container">
+            <form id="form" class="form">
+                <h2>Find Your Dream Job</h2>
+                
+                <div class="form-control">
+                    <label for="Full Name">Full Name<span style="color:red;">*</span></label>
+                    <input type="text" id="Full Name" placeholder="Enter Your full name">
+                    <small>Error massage</small>
+                </div>
+                
+                <div class="form-control">
+                    <label for="Age">Age<span style="color:red;">*</span></label>
+                    <input type="number" id="age" placeholder="Enter your Age">
+                    <small>Error massage</small>
+                </div>
+                
+                <div class="form-control">
+                    <label for="Gender" id="Gender">Gender<span style="color:red;">*</span></label>
+                    <p style="margin-left: -150px; margin-top: 20px; margin-bottom: -18px;">
+                    <input type="radio" id="Male" name="gender" value="Male">
+                    </p>
+                    <label for="Male">Male</label>
+                    <p style="margin-left: -150px; margin-top: 20px; margin-bottom: -18px;">
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    </p>
+                    <label for="Female">Female</label>
+                    <small>Error massage</small>
+                </div>
+                
+               <div class="form-control">
+                    <label for="Qualification">Qualification<span style="color:red;">*</span></label>
+                    <select name="Qualification" class="Quasucess" id="Qualification">
+                    <option value=""></option>
+                    <option value="B.TECH">BTECH</option>
+                    <option value="BSC">BSC</option>
+                    <option value="M.TECH">MTECH</option>
+                    <option value="MSC">MSC</option> 
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                    </select>
+                    <small>Error massage</small>
+                </div>
+                
+                <div class="form-control">
+                    <label for="About Yourself">About Yourself<span style="color:red;">*</span></label>
+                    <textarea class="self" id="About-Yourself" name="About Yourself" rows="5" cols="42" maxlength="250" placeholder="Enter here..."></textarea>
+                    <small>Error massage</small>
+                </div>
+                
+                <div class="form-control">
+                    <input style="border: 0px solid #f0f0f0;" type="file" name="CV" id="file" class="file"/>
+                    <label style="margin-top: 4px; margin-left: 6px;" for="CV">Upload CV</label>
+                    <small>Error message</small>
+                </div>
+                
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <script src="jobFinder.js"></script>
+    </body>
+</html>
